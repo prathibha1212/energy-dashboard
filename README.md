@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# Smart Home Energy Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Overview
+The **Smart Home Energy Dashboard** is a web application that helps users monitor and visualize energy consumption in real-time. It provides:
+- A **line chart** for overall energy usage over time.
+- A **bar chart** showing energy consumed by each appliance.
+- An **energy budget alert** system to notify users when usage exceeds the set limit.
 
-## Available Scripts
+## 🚀 Features
+- **Real-time Energy Monitoring**: Track energy consumption dynamically.
+- **Energy Budget Alert**: Displays a warning when energy usage exceeds 10 kWh.
+- **Appliance-wise Usage**: See which appliances consume the most energy.
+- **Interactive UI**: Responsive design with clear visualizations.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🛠️ Installation & Setup
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### **Prerequisites**
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v14+ recommended)
+- [Git](https://git-scm.com/) (if cloning via GitHub)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### **1️⃣ Clone the Repository**
+If using Git, run:
+```sh
+ git clone https://github.com/prathibha1212/energy-dashboard.git
+```
+Otherwise, download the ZIP file from GitHub and extract it.
 
-### `npm test`
+### **2️⃣ Navigate to Project Folder**
+```sh
+ cd energy-dashboard
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### **3️⃣ Install Dependencies**
+Run the following command to install required packages:
+```sh
+ npm install
+```
 
-### `npm run build`
+### **4️⃣ Start the Application**
+To launch the dashboard, run:
+```sh
+ npm start
+```
+The app will open in your default web browser at:
+```
+http://localhost:3000
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📂 Project Structure
+```
+energy-dashboard/
+│── public/             # Static files (HTML, icons, etc.)
+│── src/                # Main source code
+│   ├── components/     # Reusable components (Dashboard.jsx)
+│   ├── App.js          # Main application file
+│   ├── index.js        # Entry point of the app
+│   ├── style.css       # Stylesheet for UI
+│── package.json        # Project dependencies & scripts
+│── README.md           # Project documentation (this file)
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 📊 How It Works
+- **Set an energy budget (kWh)**: Input a budget in the text field.
+- **Monitor real-time usage**: Line and bar charts update based on data.
+- **Receive alerts**: If total energy consumption exceeds **10 kWh**, an alert message appears.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🎨 Customization
+To modify the dashboard’s appearance:
+- Edit **`src/style.css`** for UI changes.
+- Modify **`src/components/Dashboard.jsx`** for chart updates.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🛠 Troubleshooting
+**Problem:** `npm start` doesn't work?  
+✅ Solution: Try running:
+```sh
+ rm -rf node_modules package-lock.json
+ npm install
+ npm start
+```
 
-## Learn More
+**Problem:** The page is blank?  
+✅ Solution: Check browser console (`F12 > Console tab`) for errors.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📜 License
+This project is open-source under the **MIT License**.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 👨‍💻 Author
+**Prathibha**  
+🔗 GitHub: [prathibha1212](https://github.com/prathibha1212)  
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
