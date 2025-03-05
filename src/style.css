@@ -1,0 +1,55 @@
+/* General Styles */
+header {
+    background-color: #4CAF50;  /* Change this to any color you like */
+    color:"#f4f4f4";               /* Text color */
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+    fill:"#ffc14d";
+  }
+  
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color:beige; /* Change to your chosen color */
+    color: #333; /* Ensure text is readable */
+  }
+  
+  /* Container for Dashboard */
+  .dashboard-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background:#F5D7C4;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  .budget-container {
+    
+    margin-bottom: 10px;
+  }
+  
+  input {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 14px;
+    color: #f5425a;
+  }
+  label {
+    color: blue; /* Change to any color */
+    font-weight: bold; /* Optional: Make text bold */
+  }
+  
+  
+  .alert {
+    color: red;
+    font-weight: bold;
+  }
+  
